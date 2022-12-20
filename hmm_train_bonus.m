@@ -1,7 +1,7 @@
 function [prob_iter,hmm_trained] = hmm_train_bonus(data,hmm_initialized,emis_initialized,iter,digits,digit_list,phonemes_list)
 
 U = length(data); % number of utterance 
-num_states=2;
+num_states=3;
 for i=1:iter
     for p= phonemes_list
         for n=1:num_states
